@@ -24,6 +24,4 @@ jobs:
           --header 'autorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
           --data '{
             "title": "Automated issue for commit: '"${{ github.sha }}"'",
-            "body": "This issue was automatically created by the GitHub action
-                  workflow **'"${{ github.workflow }}"'**. \n\n The commit hash was:
-                  _'"${{ github.sha }}"'_."}'
+            "body": "This issue was automatically created by the GitHub action workflow **'"${{ github.workflow }}"'**. \n\n The commit hash was: _'"${{ github.sha }}"'_."}'
